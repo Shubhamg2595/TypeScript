@@ -1,24 +1,26 @@
-//! delayed initialization : declaring a variable and then initializing it later
+// when inference doesn't work
 
 // // issue
-// let words = ['red','green']
+// let numbers = [-10,-1,12];
+// let numberAboveZero = false;
 
-// let foundWord; //type: any
+// // WAC to update value of numberAboveZero variable
 
-// for(let i=0;i<words.length;i++){
-//     if(words[i] === 'greem'){
-//         foundWord = true;
+// for(let num of numbers){
+//     if(num>0){
+//         numberAboveZero = num
 //     }
 // }
 
-
 // solution
-let words = ['red','green']
 
-let foundWord: boolean; //type: any
+let numbers = [-10,-1,12];
+let numberAboveZero: boolean | number = false;
 
-for(let i=0;i<words.length;i++){
-    if(words[i] === 'greem'){
-        foundWord = true;
+// WAC to update value of numberAboveZero variable
+
+for(let num of numbers){
+    if(num>0){
+        numberAboveZero = num
     }
 }
