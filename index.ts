@@ -1,16 +1,38 @@
-// ! Type
-// Easy way to refer to different properties + functions that a value has
-// types can be understood as labels for describing the different properties and methods that a single value has.
+// ! Type annotation
+// code we add to tell TS what type of value a variable will refer to
 
-// ? 1. Primitive Types:
-// * -number - boolean - undefined - null - string - symbol - null;
+// ! Type inference
+// TS tries to figure what type of value, a variable refers to.
 
-// ? Object Types:
-// * -functions -arrays -objects -classes
+// ! Annotations
 
+const apples: number = 5;
 
-// ? why we need types?
-// - types are used by the TS compilers to analyze our code for errors.
-// - types allow other engineers to understand what values are flowing around our codebase.
+let speed: string = "fast";
 
-// ? we use types everywhere when working with typeScript
+let hasName: boolean = true;
+
+let nothingMuch: null = null;
+let nothingMuchMore: undefined = undefined;
+
+// using built-in objects
+
+let date: Date = new Date();
+
+// array
+let colors: string[] = ["red", "green"];
+let numbersArr: number[] = [1, 2, 3];
+let booleanArr: boolean[] = [true, false];
+
+// classes
+
+class Car {}
+
+let car: Car = new Car();
+
+// Object literal
+
+let point: { x: number; y: number } = {
+  x: 10,
+  y: 20,
+};
