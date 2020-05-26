@@ -30,7 +30,7 @@
 
 // let car: Car = new Car();
 
-// // Object literal
+// // Object litderal
 
 // let point: { x: number; y: number } = {
 //   x: 10,
