@@ -3,7 +3,7 @@
 // types can be understood as labels for describing the different properties and methods that a single value has.
 
 // ? 1. Primitive Types:
-// * -number - boolean - undefined - null - string - symbol - null;
+// * -number - boolean - undefined - null - string - symbol;
 
 // ? Object Types:
 // * -functions -arrays -objects -classes

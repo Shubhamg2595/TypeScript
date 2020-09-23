@@ -1,0 +1,39 @@
+/* update tsconfig.json like this:*/
+
+{
+  "compilerOptions": {
+    "target": "es6" /*telling TS comppiler in which JS version do we want our TS code to be compiled in */,
+    "module": "commonjs",
+    "lib": [
+        "dom",
+        "es6",
+        "dom.iterable",
+        "scripthost"
+    ], // this options allows us to specify which default objects and features TS knows , ex : working with the dom , default libs are ie. ES6 fetaures like Map Object, DOM apis are also available.
+    "allowJS": true, // allows ts compiler to compile JS files too along with ts files
+    "checkjs":true, // tells TS compiler to check the existing js files for error, but does not compile them, if 'allowjs' is set to false.
+     "jsx" : "preseve | react", //useful with react apps
+     "declaration": true,
+     "declarationMap": true, // these 2 options are useful when we intend to ship our ts project as a library   
+     "sourceMap": true, // helps us with debugging and development
+     "outDir": "./dist", // specifies  the location where the ts compiler needs to store the compiled js files
+     "rootDir": "./src", // TS compiler knows where to look for to compile the project files along with the project structure
+     "removeComments": "true", // remove all the comments  from output
+     "noEmit": true, // useful when we dont want the ts compiler to generate js files and only check for errors in ts files
+     "downlevelIteration": true, // useful we are compiling are ts files to older versions of js files like es5. useful with loops
+     "noEmitOnError": false, // tells ts compiler to generate js files even if the code has errors. IF SET TO TRUE, files containing errors will not be generated.
+     /* strict type-checking options*/
+     "strict": true, // enables all the strict type-checking options
+     "noImplicitAny": true, // useful when we want to allow implicit any type for  our code
+     /* additional checks*/
+     "noUnusedLocals": true,
+     "noUnysedParameters": true,
+     "noImplicitReturns": true,
+     // report errors on unused Locals ,parameters or we have a function that sometimes return a value and sometimes not.
+    "exclude": ["node_modules", "foldername"],
+    "include": ["folderName"],
+    "files": ["app.ts"] // this option is useful in smaller apps, where we need to compile specific ts files
+  }
+}
+
+//   note : node_modules are excluded by default.

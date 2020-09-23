@@ -17,6 +17,10 @@
 
 // ? inheritance
 
+let x : Array<number | string>;
+
+x=["hello",12];
+
 // class Car extends Vehicle {
 //     drive() :void {
 //         console.log('vRRRRRRRRRRRoOOOOoooooM')
@@ -32,7 +36,7 @@
 
 // ? the goal of these modifiers is to restrict access to different functions or different variables.
 
-// - public : This method can be called anywhere,anytime
+// - public : This metho d can be called anywhere,anytime
 // - private : This method can only be called by other methods in this class
 // - protected : this method can be called by any other methods in this class, or by other methods in child classes.
 
