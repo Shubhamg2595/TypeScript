@@ -17,6 +17,9 @@
 
 // ? inheritance
 
+let x : Array<number | string>;
+
+x=["hello",12];
 
 // class Car extends Vehicle {
 //     drive() :void {
